@@ -1,0 +1,36 @@
+---------------------ingrediente------
+ejecucion:
+
+
+
+codigo:
+
+
+
+---------------------pocion----------
+ejecucion:
+
+
+
+codigo:
+
+
+
+
+---------------------persona----------
+ejecucion:
+persona(resistencia,fuerza)
+
+
+codigo:
+resistencia=self.resistencia
+
+fuerza=self.fuerza
+
+poder=self.fuerza * self.resistencia
+
+def recibirDaño(numero){
+set resistencia= self.resistencia - numero
+if(self.resistencia < 0){
+set self.resistencia=0}
+}
