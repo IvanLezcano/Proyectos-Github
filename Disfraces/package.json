@@ -1,0 +1,24 @@
+{
+  "name": "typescript-jes-skeleton",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/IvanLezcano/typescript-jes-skeleton",
+  "author": "Ivan lezcano",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.16.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-typescript": "^7.23.2",
+    "@jest/globals": "^29.7.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  }
+}
