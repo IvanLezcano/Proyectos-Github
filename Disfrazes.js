@@ -1,10 +1,24 @@
-let Disfraz1={
-    name:"spiderman",
-    fechaDeConfeccion:"12/12/2005",
-    nivelDeGracia:5,
-    puntajeDelDisfraz:10,
-
+class Disfraz {
+  _nombre
+  _fechaDeConfeccion
+  _nivelDeGracia
+  constructor(nombre,fechaDeConfeccion,nivelDeGracia) {
+    this._nombre = nombre;
+    this._fechaDeConfeccion=fechaDeConfeccion
+    this._fechaDeConfeccion=fechaDeConfeccion
+  
+  }
+  get nombre(){
+    return this._nombre
+  }
+  puntajeDelDisfraz(persona){
+    return nivelDeGracia
+  }
 }
+
+
+let Disfraz1= new Disfraz ("spiderman", "11/12/1997")
+
 
 /*aca creo dos disfrazes bien hechos para probar*/
 let batman={
@@ -30,6 +44,8 @@ let fiestaDeMarta = {
 
 }
 
+
+
 class Invitado {
     constructor(edad,disfraz,fiesta) {
       this.edad = edad;
@@ -43,8 +59,8 @@ console.log(Disfraz1)
 let juan = new Invitado(23,Disfraz1,fiestaDeMarta)
 console.log(juan.edad)
 /*que funcione el objeto que recibe juan*/
-console.log(juan.disfraz.name)
-/*aca entendi que los disfrazes pueden ser objetos multiples*/
+console.log(juan.disfraz.nombre)
+/*aca NO entendi que los disfrazes pueden ser objetos multiples SINO por la necedidad de generar objetos dinamicamente y no hardcodearlos!!! */
 /*que funcione la funcion dentro del objeto*/
 let miguel = new Invitado(20,elcoringa,fiestaDeMarta)
 console.log(miguel.disfraz.puntajeDelDisfraz(miguel))
@@ -54,7 +70,11 @@ de la persona */
 let roberto = new Invitado(202,elcoringa,fiestaDeMarta)
 console.log(miguel.disfraz.puntajeDelDisfraz(roberto))
 /* probando si se pueden comparar fechas */
-console.log( 12/12/2023<24/12/2023) /*se puede papaaa*/
+console.log( 01/01/2023<07/08/2023) 
+
+
+
+/*se puede papaaa*/
 /* Ahora probemos de calcular el puntaje mas si es barato dependiendo
 de la fecha de la fiesta */
 
@@ -96,3 +116,12 @@ class invitado(disfraz=momia,personalidad=alegre){
     }
     
     */
+
+    let Disfraz1={
+      name:"spiderman",
+      fechaDeConfeccion:"12/12/2005",
+      nivelDeGracia:5,
+      puntajeDelDisfraz:10,
+  
+  }
+  
